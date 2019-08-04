@@ -8,8 +8,8 @@ Basic hello world program.
 
 
 ## 2. include directives:
- ### #include "cuda_runtime.h"
- ### #include "device_launch_parameters.h" :
+ ### - #include "cuda_runtime.h"
+ ### - #include "device_launch_parameters.h" :
   - Both are directives to CUDA compiler.
   
  ### #include<stdio.h> :
@@ -19,7 +19,7 @@ Basic hello world program.
 ## 3. __global__ void kernel():
 - __global__ keyword tells the compiler that this function needs to be compiled with CUDA compiler.
 - This is a declaration of the function.
-- Thhe function is defined after main().
+- The function is defined after main().
 
 
 ## 4. kernel<<<1,1>>> :
