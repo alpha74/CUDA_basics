@@ -1,11 +1,12 @@
 # CUDA Programs > hello_world.cu
 
 
-## Comments:
+## 1. Comments:
 * Syntax of comments remains same: // for single line comments and /* */ for multi-line comments.
 
-## include directives:
- ### #include "cuda_runtime.h" and #include "device_launch_parameters.h" :
+## 2. include directives:
+ ### #include "cuda_runtime.h"
+ ### #include "device_launch_parameters.h" :
   * Both are directives to CUDA compiler.
   
  ### #include<stdio.h> :
