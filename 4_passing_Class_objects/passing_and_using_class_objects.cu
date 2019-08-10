@@ -1,5 +1,5 @@
-
 // Testing class objects passing
+// Author: alpha74
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
@@ -44,25 +44,30 @@ int main()
 	Marks *dev_A;
 
 	int sum[N];
-	int *dev_sum;
+	int *dev_sum;	// Pointer to hold sum
 
-	// Device memory
+	// Device memory allocation
 	cudaMalloc((void**)&dev_A, N * sizeof(Marks));
 	cudaMalloc((void**)&dev_sum, N * sizeof(int));
 
-	// Setting marks
+	// Initializing marks
 	for (int i = 0; i < N; i++)
 	{
 		A[i].m1 = 9;
 		A[i].m2 = 8;
 	}
 
+	// Copy contents of A to dev_A
 	cudaMemcpy(dev_A, A, N * sizeof(Marks), cudaMemcpyHostToDevice);
-	add << <N, 1 >> > (dev_A, dev_sum);
+	add <<< N, 1 >>> (dev_A, dev_sum);
 
 	cudaMemcpy(sum, dev_sum, N * sizeof(int), cudaMemcpyDeviceToHost);
 
 	cout << "\n Sums: \n ";
 	for (int i = 0; i < N; i++)
 		cout << "\n " << i + 1 << ": " << sum[i];
+	
+	// Freeing device memory
+	cudaFree(dev_A);
+	cudaFree(dev_sum);
 }
