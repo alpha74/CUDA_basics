@@ -37,8 +37,6 @@ __global__ void foo( int lim, Coord C[], Coord *oddi, Coord *eveni)
 
 	if (tid < lim)
 	{
-		printf("\n blockidx.x: %d", tid);
-
 		if (tid % 2 == 0)
 		{
 			eveni[tid / 2] = C[tid];
