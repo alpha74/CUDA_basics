@@ -1,4 +1,5 @@
 // Basic CUDA Program
+// Author: alpha74
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
