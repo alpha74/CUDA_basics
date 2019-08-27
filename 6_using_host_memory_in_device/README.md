@@ -6,10 +6,10 @@ This function allows to use host memory for computations in device kernel.
 ## Steps of usage:
 1. Declare int pointers, one for host, and other for device.
 2. Use cudaHostAlloc() for allocation memory using host pointer.
-3. Use **cudaHostGetDevicePointer() to get corresponding pointer in device memory, to be stored in device pointer.
+3. Use **cudaHostGetDevicePointer() to get corresponding pointer in device memory, to be stored in device pointer**.
 4. Initialize the vector(or anything) using host pointer normally.
 5. Launch the kernel using the corresponding device pointer.
-6. Free host memory after usage using **cudaFreeHost( host_pointer ).
+6. Free host memory after usage using **cudaFreeHost( host_pointer )**.
 
 - It will look like this:
 ```
@@ -37,7 +37,7 @@ cudaFreeHost( a ) ;
 
 
 ## malloc() vs cudaHostAlloc():
-- cudaHostAlloc() works like malloc().
+- cudaHostAlloc() works like **malloc()**.
 - malloc() allocates standard pageable host memory.
 - cudaHostAlloc() allocates page-locked host memory, i.e, the memory page will never will swapped out.
 
