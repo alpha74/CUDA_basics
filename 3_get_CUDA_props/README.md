@@ -1,4 +1,4 @@
-# cudaGetDevicePrperties()
+# cudaGetDeviceProperties()
 ## Getting CUDA Device properties
 A very important feature offered.
 
