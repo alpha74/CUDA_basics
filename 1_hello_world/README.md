@@ -1,4 +1,4 @@
-# CUDA Programs > hello_world.cu
+# Hello World Program
 Basic hello world program.
 
 
