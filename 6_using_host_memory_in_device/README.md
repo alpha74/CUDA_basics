@@ -19,7 +19,7 @@ int *dev_a ;
 
 // Allocate on host
 cudaHostAlloc( (void**)&a, size * sizeof( int ), cudaHostAllocDefault ) ;
-// Other flags: cudaHostAllocWriteCombined | cudaHostAllocMapped 
+// Some other flags: cudaHostAllocWriteCombined | cudaHostAllocMapped 
 
 // Get corresponding Device pointer
 cudaHostGetDevicePointer( &dev_a, a, 0 )
