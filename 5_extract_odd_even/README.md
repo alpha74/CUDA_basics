@@ -3,6 +3,8 @@
 
 Extract elements from main array and place elements at even index and odd index into separate arrays, respectively.
 
+
+## Cases:
 - threadIdx.x returns the ID of current thread's I dimension.
 - In the given program, kernel is launched like this: **<<<N,1>>>**.
 - Here, N blocks with 1 thread each is launched.
@@ -19,7 +21,7 @@ Extract elements from main array and place elements at even index and odd index 
 
 - If the kernel was launched like this: **<<<4,20>>>** ( 4 blocks, 20 threads ) : It will launch ( 4 x 20 ) threads.
 - **blockDim.x** acts like an offset. Returns number of threads in a block, which is same for each block in a GPU.
-- In the above case, **tid** will be calculated as:
+- In this case, **tid** will be calculated as:
 ```
   int tid = threadIdx.x + blockDim.x * blockIdx.x ;
 ```
