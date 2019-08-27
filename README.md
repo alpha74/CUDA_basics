@@ -11,3 +11,4 @@ Introductory CUDA programs in C.
 ## Requirements(Programmed in):
  * Visual Studio Code-Community 2017
  * NVIDIA CUDA Toolkit
+ * CUDA compatible GPU
