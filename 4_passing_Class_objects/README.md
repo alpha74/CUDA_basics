@@ -1,4 +1,5 @@
-# Passing and using Class objects
+# cudaMemcpy()
+## Passing and using Class objects
 
 ## Objective:
 - Declaring a class.
