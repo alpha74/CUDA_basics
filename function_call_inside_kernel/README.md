@@ -1,4 +1,4 @@
-## Function Execution Space Specifiers
+# Function Execution Space Specifiers
 
 *[Source: NVIDIA CUDA Documentation](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#function-declaration-specifiers)*
 
@@ -6,7 +6,7 @@
 
 ### Types:
 
- `__device__ ` :
+ `__device__` :
 - Declares a function that is:
   - Executed on device.
   - Callable from device only.
@@ -14,7 +14,7 @@
   - Compiler inlines any __device__ function when deemed appropriate.
   
 
-`__global__ ` :
+`__global__` :
 - Declares a function as being a kernel:
   - Executed on the device.
   - Callable from host.
@@ -25,7 +25,7 @@
   - Any call to this function must specify its `Execution Configuration`.
   
 
-`__host___ ` :
+`__host__` :
 - Declares a function as:
   - Executed on host.
   - Callable from host only.
@@ -34,9 +34,9 @@
   
 ---  
   
-`__noinline__ ` :
+`__noinline__` :
 - This qualifier can be used as a hint for compiler not to inline the function.
 
 
-`__forceinline__ ` :
+`__forceinline__` :
 - This qualifier can be used to force compiler to inline the function.
