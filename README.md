@@ -6,6 +6,7 @@ Introductory CUDA programs in C.
 * CUDA By Example - Jason Sanders, Edward Kandrot
 * Programming Massively Parallel Processors - David B. Kirk, Wen Hwu
 * Parallel Programming Lectures - Carnegie Mellon University
+* [NVIDIA CUDA Documentation](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#introduction)
 
 
 ## Requirements(Programmed in):
