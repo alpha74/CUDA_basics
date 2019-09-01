@@ -15,11 +15,11 @@ Basic hello world program.
   - Standard Input/Output C header file.
 
 
-## 3. `__global__ void kernel()`:
+### 3. `__global__ void kernel()`:
 - __global__ keyword tells the compiler that this function needs to be compiled with CUDA compiler.
 - This is a declaration of the function.
 - The function is defined after main().
 
 
-## `4. kernel<<<1,1>>>` :
+## 4. `kernel<<<1,1>>>` :
 - Tells the compiler to launch a GRID of 1x1 threads.
