@@ -76,8 +76,8 @@ int main()
 	cudaMalloc((void**)&dev_even, N / 2 * sizeof(Coord));
 
 	cudaMemcpy(dev_C, C, N * sizeof(Coord), cudaMemcpyHostToDevice);
-	cudaMemcpy(dev_odd, &C, N/2 * sizeof(Coord), cudaMemcpyHostToDevice);
-	cudaMemcpy(dev_even, &C, N / 2 * sizeof(Coord), cudaMemcpyHostToDevice);
+	cudaMemcpy(dev_odd, C, N/2 * sizeof(Coord), cudaMemcpyHostToDevice);	// Adding part of the array for comparison.
+	cudaMemcpy(dev_even, C, N / 2 * sizeof(Coord), cudaMemcpyHostToDevice);	// Adding part of the array for comparison.
 
 	foo <<<N, 1 >>> ( N, dev_C, dev_odd, dev_even );
 
