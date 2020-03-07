@@ -10,8 +10,8 @@ __global__ void add(int, int, int *);	// Add two numbers
 
 int main()
 {
-	int c;
-	int *dev_c;
+	int c;		// Final result will be stored here
+	int *dev_c;	// Allocation of device memory done here.
 
 	cudaMalloc((void**)&dev_c, sizeof(int));
 
