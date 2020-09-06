@@ -1,5 +1,5 @@
 # CUDA Basic Programs
-Introductory CUDA programs in C.
+Introductory CUDA programs.
 
 
 ## Used and Recommended Resources(In succession):
