@@ -1,3 +1,5 @@
+![CUDA](https://upload.wikimedia.org/wikipedia/en/b/b9/Nvidia_CUDA_Logo.jpg)
+
 # CUDA Basic Programs
 Introductory CUDA programs.
 
