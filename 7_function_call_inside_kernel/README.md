@@ -1,8 +1,10 @@
-# Function Execution Space Specifiers
+## Function Execution Space Specifiers
 
 *[Source: NVIDIA CUDA Documentation](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#function-declaration-specifiers)*
 
 - `Function Execution Space Specifiers` denote whether a function executes on host or on the device and whether it is callable from the host or the device.
+
+- [Source Code](https://github.com/alpha74/CUDA_basics/blob/master/7_function_call_inside_kernel/func_call_inside_kernel.cu)
 
 ### Types:
 
