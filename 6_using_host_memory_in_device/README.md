@@ -1,9 +1,13 @@
-# cudaHostAlloc()
+## cudaHostAlloc()
+
 ### Using Host memory in Device
 
 This function allows to use host memory for computations in device kernel.
 
-## Steps of usage:
+- [Source Code](https://github.com/alpha74/CUDA_basics/blob/master/6_using_host_memory_in_device/using_host_memory_in_device.cu)
+
+### Steps of usage:
+
 1. Declare int pointers, one for host, and other for device.
 2. Use cudaHostAlloc() for allocation memory using host pointer.
 3. Use **cudaHostGetDevicePointer()** to get corresponding pointer in device memory, to be stored in device pointer**.
@@ -12,6 +16,7 @@ This function allows to use host memory for computations in device kernel.
 6. Free host memory after usage using **cudaFreeHost( host_pointer )**.
 
 - It will look like this:
+
 ```
 // Declare pointers
 int *a ;
@@ -36,12 +41,14 @@ cudaFreeHost( a ) ;
 ```
 
 
-## malloc() vs cudaHostAlloc():
+### malloc() vs cudaHostAlloc():
 - cudaHostAlloc() works like **malloc()**.
 - malloc() allocates standard pageable host memory.
 - cudaHostAlloc() allocates page-locked host memory, i.e, the memory page will never will swapped out.
 
-## Caution:
+
+### Caution:
+
 - Its usage will opt out the features of virtual memory.
 - System can run out of memory faster, as buffers can never be swapped to disk.
 - Applications can fail on system having small amount of physical memory.
