@@ -1,10 +1,17 @@
-# tid
-## Extract Odd-Even positions
+## tid
 
-Extract elements from main array and place elements at even index and odd index into separate arrays, respectively.
+### Extract Odd-Even elements
+
+- [Source Code](https://github.com/alpha74/CUDA_basics/blob/master/5_extract_odd_even/extract_odd_even.cu)
+
+
+### Objective: 
+
+- Extract elements from main array and place elements at even index and odd index into separate arrays, respectively.
 
 
 ## Cases:
+
 - threadIdx.x returns the ID of current thread's I dimension.
 - In the given program, kernel is launched like this: **<<<N,1>>>**.
 - Here, N blocks with 1 thread each is launched.
